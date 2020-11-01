@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--baseColor);
+    background: var(--baseBackground);
+  }
+
+  :root {
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    
+    --facebook:#1877f2;
+    --twitter: hsl(203, 89%, 53%);
+    --instagram-1: hsl(37, 97%, 70%);
+    --instagram-2: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+    --gray: #5a5a5f;
+    --cardGray: #f0f3fa;
+    --lightGray: #f8f9fe;
+    --baseBackground: white;
+    --baseColor: #1d2029;
+  }
+
+  .wrapper{
+    padding: 0 1.5rem;
+  }
+  
+  .grid {
+    display: grid;
+    row-gap: 2.0rem;
+  }
