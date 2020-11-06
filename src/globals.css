@@ -1,3 +1,6 @@
+
+/* globals */
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -29,3 +32,88 @@ body {
     display: grid;
     row-gap: 2.0rem;
   }
+
+  h2 {
+    color: var(--gray);
+  }
+
+  @media screen and (min-width: 480px) {
+
+    .grid {
+        border: 1px solid purple;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+    }
+  
+    .wrapper {
+        max-width: 1440px;
+        margin: auto;
+    }
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+  
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+    .header-total{
+        border: none;
+    }
+  
+    .header-grid {
+        display: grid;
+        grid-template-columns: 1fr 12.5rem;
+    }
+  }
+
+  /* Nota: No funciona modo oscuro con media query */
+@media (prefers-color-scheme: dark) {
+  
+  /* Nota: Eliminado durante refactor
+  body {
+       background-color: #1d2029;
+       color: white;
+   } */
+
+   :root {
+       --cardGray: #252b43;
+       --baseBackground: #1d2029;
+       --baseColor: white;
+       --gray: #8088ad;
+       --lightGray: #1d2029;
+   }
+
+   .card {
+       color: white;
+   }
+
+   .card-followers-title {
+      color: #8088ad;
+   }
+
+   .card-title {
+       color: var(--gray);
+   }
+
+   .card-small {
+       background: #252b43;
+   }
+
+   .card-small-views {
+       color: #8088ad;
+   }
+
+   .switch {
+       background-image: linear-gradient(to right, #0c4b7a 0%, #37ce8f 100%);
+   }
+
+}

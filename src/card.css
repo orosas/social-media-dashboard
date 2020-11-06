@@ -1,0 +1,99 @@
+/* card */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    /* background: #f0f3fa; */
+    background: var(--cardGray);
+    text-align: center;
+    position: relative;
+    padding: 1.1rem 0;
+  }
+  
+  /* Nota: Estilo para la línea superior de color tipo margin de cada card */
+  .card::before {
+    content: ".card::before en styles.css";
+    height: 0.35rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Asigna color a la línea superior, tipo margin, de cada card */
+  .card.facebook:before {
+    background: var(--facebook);
+  }
+  .card.twitter:before {
+    background: var(--twitter);
+  }
+  .card.instagram:before {
+    /* background: var(--instagram-1); */
+    background-image: linear-gradient(to right, var(--instagram-1), var(--instagram-2));
+  }
+  
+  .card.youtube:before {
+    background: var(--youtube);
+  }
+  
+  .card-title {
+    display: flex;
+    /* Nota: align-items: center permite alinear de manera vertical el ícono
+    con el texto de la línea */
+    align-items: center;
+    /* Nota: justify-content: center, permite alinear el contenido de manera horizontal. */
+    justify-content: center;
+    color: var(--gray);
+    font-size: 0.9;
+    font-weight: bold;
+  }
+  
+  .card-title i{
+    margin-right: 2rem;
+  }
+  
+  .card-followers {
+    /* border: solid 1px green; */
+  }
+  
+  .card-followers-number {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .card-followers-title {
+    display: block;
+    text-transform: uppercase;
+    color: var(--gray);
+    letter-spacing: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .card-today{
+    margin-top: 1.6rem;
+    color:var(--lime-green);
+    font-size: 0.85rem;
+    font-weight: bold;
+    /* Nota: Alínea img con el centro del texto
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  
+  .card-today i{
+    margin-right: 0.5rem;
+  }
+  
+  .faceColor {
+    color: var(--facebook);
+  }
+  
+  .instagramColor {
+    color: var(--instagram-1);
+  }
+  
+  .youtubeColor {
+    color: var(--youtube);
+  }
+  
+  

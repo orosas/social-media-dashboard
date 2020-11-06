@@ -1,0 +1,56 @@
+.card-small {
+    /* border: 1px solid red; */
+    /* Nota: display: grid y grid-template-columns 1fr 1fr 
+            se utilizan para crear una cuadrícula de 4 componenentes */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+    background: #f0f3fa;
+    border-radius: .5rem;
+    padding: 1.5rem;
+  }
+  
+  .card-small p {
+    margin: 0;
+  }
+  
+  .card-small-views {
+    /* border: 1px solid green; */
+    color: var(--gray);
+    font-weight: bold;
+  }
+  
+  .card-small-icon {
+    /* border: 1px solid orange; */
+    text-align: center;
+  }
+  
+  .card-small-number {
+    /* border: 1px solid purple; */
+    font-weight: bold;
+    font-size: 2.4em;
+    line-height: 0.9;
+  }
+  
+  .card-small-percentage {
+    /* border: 1px solid blue; */
+    display: flex;
+    /* Nota: align-items: center permite alinear de manera vertical el ícono
+    con el texto de la línea */
+    /* align-items: center; */
+    align-items: center;
+    text-align: right;
+    /* Nota: justify-content: right, permite alinear el contenido de manera horizontal. */
+    /* justify-content: right; */
+    justify-content: center;
+    color: var(--lime-green);
+    font-size: 0.9rem;
+  }
+  
+  .card-small-percentage.is-danger {
+    color: var(--bright-red);
+  }
+  
+  .card-small-percentage i {
+    margin-right: .4rem;
+  }
